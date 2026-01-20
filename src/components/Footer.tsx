@@ -1,48 +1,39 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-slate-400">
-            © 2026 Software Engineer Freelancer. All rights reserved.
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="mb-4 md:mb-0">
+            © {new Date().getFullYear()} Lexicon Systemas · Built by Simone Lawson
+          </p>
 
           <div className="flex gap-6">
             <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors"
-              aria-label="GitHub"
+              href="mailto:simonerlawson@gmail.com" 
+              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
             >
-              <Github className="w-6 h-6" />
+              <Mail className="w-4 h-4" />
+              Email
             </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/simonerlawson"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors"
-              aria-label="LinkedIn"
+              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="w-4 h-4" />
+              LinkedIn
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
+            <a
+              href="https://github.com/studiosaturnent"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors"
-              aria-label="Twitter"
+              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
             >
-              <Twitter className="w-6 h-6" />
-            </a>
-            <a 
-              href="mailto:hello@example.com"
-              className="text-slate-400 hover:text-white transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="w-6 h-6" />
+              <Github className="w-4 h-4" />
+              GitHub
             </a>
           </div>
         </div>

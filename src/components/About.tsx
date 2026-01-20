@@ -14,22 +14,23 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl mb-6">
-              About Me
+              About
             </h2>
             <div className="space-y-4 text-slate-300 text-lg leading-relaxed">
               <p>
-                I'm a passionate software engineer with over 8 years of experience building
-                web and mobile applications. I specialize in creating performant, scalable
-                solutions that solve real-world problems.
+                Simone is a software engineer with a background in Full-Stack
+                development, automation, and systems integration. I focus on building
+                tools that reduce manual work, improve response times, and help
+                businesses operate more efficiently.
               </p>
               <p>
-                My journey in software development started with a curiosity about how things work,
-                which evolved into a career dedicated to continuous learning and innovation.
-                I believe in writing clean, maintainable code and following best practices.
+                My experience spans Python, JavaScript, SQL, APIs, and infrastructure
+                tooling. I prioritize clarity, maintainability, and solutions that make
+                sense for real teams — not over-engineered demos.
               </p>
               <p>
-                When I'm not coding, you can find me contributing to open-source projects,
-                mentoring aspiring developers, or exploring new technologies.
+                Lexicon Systemas exists to deliver straightforward, dependable software
+                and automation for clients who need systems that actually work.
               </p>
             </div>
           </div>

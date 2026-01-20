@@ -1,35 +1,25 @@
-import { Code2, Smartphone, Globe, Database, Zap, Shield } from 'lucide-react';
+import { Code2, Database, Zap, Shield } from 'lucide-react';
 
 const services = [
   {
-    icon: Globe,
-    title: 'Web Development',
-    description: 'Custom web applications built with modern frameworks like React, Next.js, and Vue.js.'
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile Development',
-    description: 'Native and cross-platform mobile apps for iOS and Android using React Native and Flutter.'
-  },
-  {
-    icon: Database,
-    title: 'Backend Development',
-    description: 'Scalable server-side solutions with Node.js, Python, and cloud services.'
+    icon: Zap,
+    title: 'Automation & AI Workflows',
+    description: 'Custom automation using APIs, scripts, and AI-assisted tools to handle follow-ups, intake, and internal processes.'
   },
   {
     icon: Code2,
-    title: 'API Development',
-    description: 'RESTful and GraphQL APIs designed for performance and reliability.'
+    title: 'Custom Software Development',
+    description: 'Full-stack web applications built with modern, maintainable technologies.'
   },
   {
-    icon: Zap,
-    title: 'Performance Optimization',
-    description: 'Speed up your applications with code optimization and best practices.'
+    icon: Database,
+    title: 'Systems Integration',
+    description: 'Connecting existing tools, databases, and services into a cohesive workflow.'
   },
   {
     icon: Shield,
-    title: 'Security Consulting',
-    description: 'Secure your applications with comprehensive security audits and implementations.'
+    title: 'Technical Consulting',
+    description: 'Architecture review, tooling guidance, and implementation support.'
   }
 ];
 
@@ -42,22 +32,19 @@ export function Services() {
             Services
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Comprehensive software solutions tailored to your business needs
+            Practical automation, AI-assisted workflows, and custom software for modern businesses.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div 
-                key={index}
-                className="p-8 bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors border border-slate-200 hover:border-blue-300 hover:shadow-lg"
-              >
-                <div className="w-14 h-14 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                  <Icon className="w-7 h-7 text-white" />
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <Icon className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl mb-3 text-slate-900">
+                <h3 className="text-xl font-semibold mb-4 text-slate-900">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 leading-relaxed">

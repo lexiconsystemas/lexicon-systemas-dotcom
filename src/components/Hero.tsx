@@ -20,16 +20,16 @@ export function Hero() {
         </div>
         
         <h1 className="text-5xl md:text-7xl mb-6 text-white">
-          Software Engineer
+          Lexicon Systemas
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-            & Full-Stack Developer
+            Practical automation & custom software
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto">
-          Crafting elegant solutions to complex problems. Specialized in web and mobile applications
-          with a focus on performance and user experience.
+          Built by Simone Lawson — a software engineer focused on clean systems,
+          reliability, and real-world use cases.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -37,43 +37,41 @@ export function Hero() {
             href="#contact"
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors flex items-center gap-2 text-lg"
           >
-            Get In Touch
+            Get in touch
             <ArrowRight className="w-5 h-5" />
           </a>
           <a 
-            href="#projects"
+            href="https://github.com/lexiconsystemas"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-slate-700/50 hover:bg-slate-700 text-white rounded-lg transition-colors border border-slate-600 text-lg"
           >
-            View My Work
+            GitHub
           </a>
         </div>
 
-        {/* Social Links */}
-        <div className="flex gap-6 justify-center">
+        <div className="flex justify-center gap-6">
           <a 
-            href="https://github.com" 
-            target="_blank" 
+            href="https://github.com/lexiconsystemas"
+            target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-full transition-colors"
-            aria-label="GitHub"
+            className="w-12 h-12 bg-slate-700/50 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors border border-slate-600"
           >
-            <Github className="w-6 h-6" />
+            <Github className="w-6 h-6 text-white" />
           </a>
           <a 
-            href="https://linkedin.com" 
-            target="_blank" 
+            href="https://www.linkedin.com/in/simonerlawson"
+            target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-full transition-colors"
-            aria-label="LinkedIn"
+            className="w-12 h-12 bg-slate-700/50 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors border border-slate-600"
           >
-            <Linkedin className="w-6 h-6" />
+            <Linkedin className="w-6 h-6 text-white" />
           </a>
           <a 
-            href="mailto:hello@example.com"
-            className="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-full transition-colors"
-            aria-label="Email"
+            href="mailto:hello@lexiconsystemas.com"
+            className="w-12 h-12 bg-slate-700/50 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors border border-slate-600"
           >
-            <Mail className="w-6 h-6" />
+            <Mail className="w-6 h-6 text-white" />
           </a>
         </div>
       </div>
